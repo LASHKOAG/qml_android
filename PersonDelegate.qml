@@ -6,6 +6,7 @@ Item {
     id: root
 
     property alias ava: icon.source
+    property bool online: false
 
     Rectangle {
         anchors.fill: parent
@@ -30,6 +31,20 @@ Item {
                 top: parent.top
                 leftMargin: 8
                 topMargin: 6
+            }
+            RowLayout {
+                Rectangle {
+                    id: indicator
+                    width: 10
+                    height: width
+                    radius: width / 2
+                    color: online ? "green" : "red"
+                }
+
+            }
+            Text {
+                id: name
+                text: qsTr("text")
             }
         }
     }
