@@ -41,7 +41,8 @@ jkgl; j;;;g fuytrtywtrphjjk kghujhfkhfglj,. hffhj dfs er jkek"
         model: myModel
         spacing: 10
         delegate: PersonDelegate {
-
+            width: parent.width
+            ava: modelData.ava
         }
     }
 }
