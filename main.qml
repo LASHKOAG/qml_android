@@ -38,7 +38,7 @@ jkgl; j;;;g fuytrtywtrphjjk kghujhfkhfglj,. hffhj dfs er jkek"
     ListView {
         anchors.fill: parent
         anchors.margins: 20
-        model: 6
+        model: myModel
         spacing: 10
         delegate: Rectangle {
             width: parent.width
