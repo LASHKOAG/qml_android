@@ -11,6 +11,7 @@ Window {
     ListView {
         anchors.fill: parent
         model: 6
+        spacing: 10
         delegate: Rectangle {
             width: parent.width
             height: 30
