@@ -1,5 +1,6 @@
 import QtQuick 2.13
 import QtQuick.Window 2.13
+import QtQuick.Layouts 1.12
 
 Item {
     id: root
@@ -20,6 +21,16 @@ Item {
             height: width
             sourceSize: Qt.size(width, width)
             fillMode: Image.PreserveAspectFit //вписывалась без искажений пропорций
+        }
+
+        ColumnLayout {
+            id: col
+            anchors {
+                left: icon.right
+                top: parent.top
+                leftMargin: 8
+                topMargin: 6
+            }
         }
     }
 }
