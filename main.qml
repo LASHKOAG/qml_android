@@ -40,12 +40,7 @@ jkgl; j;;;g fuytrtywtrphjjk kghujhfkhfglj,. hffhj dfs er jkek"
         anchors.margins: 20
         model: myModel
         spacing: 10
-        delegate: Rectangle {
-            width: parent.width
-            height: 30
-            border.width: 1
-            border.color: "red"
-            color: "transparent"
+        delegate: PersonDelegate {
         }
     }
 }
