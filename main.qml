@@ -45,6 +45,7 @@ jkgl; j;;;g fuytrtywtrphjjk kghujhfkhfglj,. hffhj dfs er jkek"
             ava: modelData.ava
             name: modelData.name
             online: modelData.status === "online"
+            lastPost: modelData.lastPost
         }
     }
 }
