@@ -32,13 +32,22 @@ Item {
                 leftMargin: 8
                 topMargin: 6
             }
+
             RowLayout {
+
                 Rectangle {
                     id: indicator
                     width: 10
                     height: width
                     radius: width / 2
                     color: online ? "green" : "red"
+                    Layout.alignment: Qt.AlignVCenter
+                }
+
+                Text {
+                    id: name
+                    font.bold: true
+                    Layout.alignment: Qt.AlignVCenter // внутри  RowLayout позиционировать вот так
                 }
 
             }
