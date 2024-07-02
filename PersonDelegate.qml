@@ -4,7 +4,8 @@ import QtQuick.Layouts 1.12
 
 Item {
     id: root
-    height: icon.height + icon.anchors.margins * 2
+    //height: icon.height + icon.anchors.margins * 2
+    height: col.height + icon.anchors.margins * 2
 
     property alias ava: icon.source
     property bool online: false
