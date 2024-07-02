@@ -11,6 +11,7 @@ Item {
     property bool online: false
     property alias name: nameText.text
     property alias lastPost: lastPost.text
+    property bool isCollapsed: root.state === "collapsed"
 
     //state: "collapsed"
     state: "expanded"
