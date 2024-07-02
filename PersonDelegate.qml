@@ -87,5 +87,12 @@ Item {
                 wrapMode: Text.WordWrap
             }
         }
+
+        MouseArea {
+            anchors.fill: col
+            onClicked: {
+                root.state = isCollapsed ? "expanded" : "collapsed"
+            }
+        }
     }
 }
