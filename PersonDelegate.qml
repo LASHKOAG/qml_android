@@ -7,6 +7,8 @@ Item {
 
     property alias ava: icon.source
     property bool online: false
+    property alias name: nameText.text
+    property alias lastPost: lastPost.text
 
     Rectangle {
         anchors.fill: parent
@@ -45,15 +47,16 @@ Item {
                 }
 
                 Text {
-                    id: name
+                    id: nameText
                     font.bold: true
                     Layout.alignment: Qt.AlignVCenter // внутри  RowLayout позиционировать вот так
                 }
 
             }
             Text {
-                id: name
-                text: qsTr("text")
+                id: lastPost
+                Layout.fillHeight: true
+
             }
         }
     }

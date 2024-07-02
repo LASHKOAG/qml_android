@@ -43,6 +43,8 @@ jkgl; j;;;g fuytrtywtrphjjk kghujhfkhfglj,. hffhj dfs er jkek"
         delegate: PersonDelegate {
             width: parent.width
             ava: modelData.ava
+            name: modelData.name
+            online: modelData.status === "online"
         }
     }
 }
