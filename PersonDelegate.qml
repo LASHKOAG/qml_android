@@ -13,8 +13,8 @@ Item {
     property alias lastPost: lastPost.text
     property bool isCollapsed: root.state === "collapsed"
 
-    //state: "collapsed"
-    state: "expanded"
+    state: "collapsed"
+    //state: "expanded"
 
     states: [
         State{
@@ -91,7 +91,10 @@ Item {
         MouseArea {
             anchors.fill: col
             onClicked: {
-                root.state = isCollapsed ? "expanded" : "collapsed"
+                if(lastPost.truncated || lastPost.lineCount > 1){
+                    root.state = isCollapsed ? "expanded" : "collapsed"
+                }
+
             }
         }
     }
