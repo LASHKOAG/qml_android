@@ -4,13 +4,35 @@ import QtQuick.Layouts 1.12
 
 Item {
     id: root
-    //height: icon.height + icon.anchors.margins * 2
-    height: col.height + icon.anchors.margins * 2
+    //
+
 
     property alias ava: icon.source
     property bool online: false
     property alias name: nameText.text
     property alias lastPost: lastPost.text
+
+    //state: "collapsed"
+    state: "expanded"
+
+    states: [
+        State{
+            name: "collapsed"
+            PropertyChanges {
+                target: root
+                height: icon.height + icon.anchors.margins * 2
+            }
+        },
+        State {
+            name: "expanded"
+            PropertyChanges {
+                target: root
+                height: col.height + icon.anchors.margins * 2
+
+            }
+        }
+
+    ]
 
     Rectangle {
         anchors.fill: parent
