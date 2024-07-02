@@ -32,6 +32,7 @@ Item {
             anchors {
                 left: icon.right
                 top: parent.top
+                right: parent.right
                 leftMargin: 8
                 topMargin: 6
             }
@@ -58,7 +59,8 @@ Item {
             Text {
                 id: lastPost
                 Layout.fillHeight: true
-
+                Layout.fillWidth: true
+                wrapMode: Text.WordWrap
             }
         }
     }
