@@ -84,7 +84,11 @@ Item {
                 id: lastPost
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                wrapMode: Text.WordWrap
+                //Layout.preferredWidth: 50
+                //wrapMode: Text.WordWrap
+                wrapMode: isCollapsed ? Text.NoWrap : Text.WordWrap
+                //обрезаем текст
+                elide: root.isCollapsed ? Text.ElideRight : Text.ElideNone
             }
         }
 
