@@ -37,10 +37,11 @@ Item {
 
     Behavior on height {
         NumberAnimation {
-            duration: 150
+            duration: 1500
         }
-
     }
+
+    clip: true // чтобы текст не опережал анимацию. Обрезать всё, что выходит за пределы делегата
 
     Rectangle {
         anchors.fill: parent
