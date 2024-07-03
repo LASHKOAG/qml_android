@@ -114,6 +114,14 @@ Item {
                 circleAnimation.start()
             }
 
+            onReleased: {
+                circleAnimation.stop()
+            }
+
+            onPositionChanged: {    //если подвигали пальцем во время нажатия, свайп или что то
+                circleAnimation.stop()
+            }
+
 
         }
     }
@@ -123,7 +131,7 @@ Item {
         width: 0
         color: "#50e0e0e0"
 
-        transform: {
+        transform: Translate{
             x: -colorRect.width / 2
             y: -colorRect.height / 2
         }
@@ -133,7 +141,7 @@ Item {
             target: colorRect
             properties: "width, height, radius"
             from: 0
-            to: 420
+            to: 820  //420
             duration: 300
 
             onStopped: {
