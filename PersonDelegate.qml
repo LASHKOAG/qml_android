@@ -37,7 +37,7 @@ Item {
 
     Behavior on height {
         NumberAnimation {
-            duration: 1500
+            duration: 150
         }
     }
 
