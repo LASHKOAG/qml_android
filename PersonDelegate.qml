@@ -106,8 +106,15 @@ Item {
                 if(lastPost.truncated || lastPost.lineCount > 1){
                     root.state = isCollapsed ? "expanded" : "collapsed"
                 }
-
             }
+
+            onPressed: {
+                colorRect.x = mouseX
+                colorRect.y = mouseY
+                circleAnimation.start()
+            }
+
+
         }
     }
     Rectangle {
