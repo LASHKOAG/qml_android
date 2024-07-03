@@ -35,6 +35,13 @@ Item {
 
     ]
 
+    Behavior on height {
+        NumberAnimation {
+            duration: 150
+        }
+
+    }
+
     Rectangle {
         anchors.fill: parent
         radius: 6
