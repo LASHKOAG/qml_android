@@ -110,4 +110,29 @@ Item {
             }
         }
     }
+    Rectangle {
+        id: colorRect
+        height: 0
+        width: 0
+        color: "#50e0e0e0"
+
+        transform: {
+            x: -colorRect.width / 2
+            y: -colorRect.height / 2
+        }
+
+        PropertyAnimation {
+            id: circleAnimation
+            target: colorRect
+            properties: "width, height, radius"
+            from: 0
+            to: 420
+            duration: 300
+
+            onStopped: {
+                colorRect.width = 0
+                colorRect.height = 0
+            }
+        }
+    }
 }
